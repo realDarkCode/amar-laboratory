@@ -1,0 +1,17 @@
+/* TOP BRANDING STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.top-branding {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  font-family: "NotoSansBengali";
+  left: var(--page-header-width);
+  width: calc(100% - var(--page-header-width));
+  padding: 30px;
+  color: white;
+  background: var(--page-header-bgColor);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}

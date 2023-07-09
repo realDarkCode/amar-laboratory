@@ -1,5 +1,6 @@
 import "./style.css";
 
+import { useNavigate } from "@reach/router";
 import { useState } from "react";
 import { experimentsList } from "../../data/experiments";
 import { classList, subjectList } from "../../data/list";
@@ -9,7 +10,7 @@ const initialState = {
 };
 const ExperimentList = () => {
   const [state, setState] = useState({ ...initialState });
-
+  const navigate = useNavigate();
   const handleSubjectClick = (subject) => {
     if (subject === state.subject) return setState({ ...state, subject: "" });
     setState({ ...state, subject });
@@ -18,6 +19,9 @@ const ExperimentList = () => {
     if (cls === state.class) return setState({ ...state, class: "" });
 
     setState({ ...state, class: cls });
+  };
+  const handleClick = (route) => {
+    navigate(`/${route}`);
   };
   return (
     <>
@@ -71,7 +75,10 @@ const ExperimentList = () => {
               }
             })
             .map((item) => (
-              <div className="experiment">
+              <div
+                className="experiment"
+                onClick={() => handleClick(item.route)}
+              >
                 <div className="cover">
                   <img src={item.image} alt="" />
                 </div>

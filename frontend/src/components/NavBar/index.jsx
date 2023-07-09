@@ -1,8 +1,9 @@
+import { Link } from "@reach/router";
 import React from "react";
-import {classList, subjectList} from "../../data/list"
+import homePageIcon from "../../assets/images/icons/home.png";
+import logoIcon from "../../assets/images/logo.png";
+import { classList, subjectList } from "../../data/list";
 import "./style.css";
-import logoIcon from "../../assets/images/logo.png"
-import homePageIcon from "../../assets/images/icons/home.png"
 const NavBar = () => {
   return (
     <React.Fragment>
@@ -26,34 +27,37 @@ const NavBar = () => {
             <img src={logoIcon} />
           </div>
           <ul className="admin-menu">
-    
             <li>
-              <a href="#0">
+              <Link to="/">
                 <img src={homePageIcon} alt="I" />
                 <span>মূল পৃষ্ঠা</span>
-              </a>
+              </Link>
             </li>
             <li className="menu-heading">
               <h3>বিষয় ভিত্তিক পরীক্ষণ</h3>
             </li>
-        
-            {subjectList.map( s=> (    <li>
-              <a href="#0">
-                <img src={s.image} alt="I" />
 
-                <span>{s.name}</span>
-              </a>
-            </li>))}
+            {subjectList.map((s) => (
+              <li>
+                <a href="#0">
+                  <img src={s.image} alt="I" />
+
+                  <span>{s.name}</span>
+                </a>
+              </li>
+            ))}
             <li className="menu-heading">
               <h3>শ্রেণি ভিত্তিক পরীক্ষণ</h3>
             </li>
-           {classList.map( c=> (    <li>
-              <a href="#0">
-                <img src={c.image} alt="I" />
+            {classList.map((c) => (
+              <li>
+                <a href="#0">
+                  <img src={c.image} alt="I" />
 
-                <span>{c.name}</span>
-              </a>
-            </li>))}
+                  <span>{c.name}</span>
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </header>

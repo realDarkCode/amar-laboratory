@@ -1,15 +1,8 @@
 import React from "react";
-import biologyIcon from "../../assets/images/biologyIcon.png";
-import chemistryIcon from "../../assets/images/chemistryIcon.png";
-import elevenIcon from "../../assets/images/elevenIcon.png";
-import homePageIcon from "../../assets/images/homeIcon.png";
-import logoIcon from "../../assets/images/logo.png";
-import nineIcon from "../../assets/images/nineIcon.png";
-import physicsIcon from "../../assets/images/physicsIcon.png";
-import tenIcon from "../../assets/images/tenIcon.png";
-import twelveIcon from "../../assets/images/twelveIcon.png";
+import {classList, subjectList} from "../../data/list"
 import "./style.css";
-
+import logoIcon from "../../assets/images/logo.png"
+import homePageIcon from "../../assets/images/icons/home.png"
 const NavBar = () => {
   return (
     <React.Fragment>
@@ -33,9 +26,7 @@ const NavBar = () => {
             <img src={logoIcon} />
           </div>
           <ul className="admin-menu">
-            {/* <li className="menu-heading">
-              <h3>Admin</h3>
-            </li> */}
+    
             <li>
               <a href="#0">
                 <img src={homePageIcon} alt="I" />
@@ -45,54 +36,24 @@ const NavBar = () => {
             <li className="menu-heading">
               <h3>বিষয় ভিত্তিক পরীক্ষণ</h3>
             </li>
-            <li>
+        
+            {subjectList.map( s=> (    <li>
               <a href="#0">
-                <img src={chemistryIcon} alt="I" />
+                <img src={s.image} alt="I" />
 
-                <span>রসায়ন</span>
+                <span>{s.name}</span>
               </a>
-            </li>
-            <li>
-              <a href="#0">
-                <img src={physicsIcon} alt="I" />
-
-                <span>পদার্থ বিজ্ঞান</span>
-              </a>
-            </li>
-            <li>
-              <a href="#0">
-                <img src={biologyIcon} alt="I" />
-                <span>জীব বিজ্ঞান</span>
-              </a>
-            </li>
+            </li>))}
             <li className="menu-heading">
               <h3>শ্রেণি ভিত্তিক পরীক্ষণ</h3>
             </li>
-            <li>
+           {classList.map( c=> (    <li>
               <a href="#0">
-                <img src={nineIcon} alt="I" />
+                <img src={c.image} alt="I" />
 
-                <span>নবম</span>
+                <span>{c.name}</span>
               </a>
-            </li>
-            <li>
-              <a href="#0">
-                <img src={tenIcon} alt="I" />
-                <span>দশম</span>
-              </a>
-            </li>
-            <li>
-              <a href="#0">
-                <img src={elevenIcon} alt="I" />
-                <span>একাদশ</span>
-              </a>
-            </li>
-            <li>
-              <a href="#0">
-                <img src={twelveIcon} alt="I" />
-                <span>দ্বাদশ</span>
-              </a>
-            </li>
+            </li>))}
           </ul>
         </nav>
       </header>

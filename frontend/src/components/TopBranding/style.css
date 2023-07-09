@@ -7,6 +7,7 @@
   font-family: "NotoSansBengali";
   left: var(--page-header-width);
   width: calc(100% - var(--page-header-width));
+  height: var(--page-brading-height);
   padding: 30px;
   color: white;
   background: var(--page-header-bgColor);

@@ -1,0 +1,8 @@
+.page-content {
+    position: relative;
+    top: var(--page-brading-height);
+    left: var(--page-header-width);
+    width: calc(100% - var(--page-header-width));
+    min-height: 100vh;
+    background-color: var(--page-content-bgColor);
+}

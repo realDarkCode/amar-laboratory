@@ -1,8 +1,11 @@
+import Homepage from "../../pages/Homepage";
 import "./style.css";
 const PageContent = () => {
   return (
     <>
-      <section className="page-content"></section>
+      <section className="page-content">
+        <Homepage /> 
+      </section>
     </>
   );
 };

@@ -85,7 +85,7 @@ const CheTheoryTemplate = () => {
             অতএব, 250 মিলি 0.1 এম দ্রবণ প্রস্তুত করতে অক্সালিক অ্যাসিডের ওজন
             প্রয়োজন ={" "}
           </p>
-          <img src={Image01} alt="simulation-theory" className="-mt-4 ml-1" />
+          <img src={Image01} alt="simulation-theory" className="mt-4 ml-1" />
         </div>
         <p className="mt-2">
           অক্সালিক অ্যাসিডের একটি আদর্শ দ্রবণ ব্যবহার করে KMnO₄ এর শক্তি
@@ -138,7 +138,7 @@ const CheTheoryTemplate = () => {
         <img src={Image07} alt="simulation-theory" className="mt-2" />
         <div className="mt-4 flex flex-wrap">
           <p>অতএব, KMnO₄ এর মোলারিটি = </p>
-          <img src={Image08} alt="simulation-theory" className="ml-1 -mt-4" />
+          <img src={Image08} alt="simulation-theory" className="ml-1 mt-4" />
         </div>
         <p>
           যদি অক্সালিক অ্যাসিড টাইট্রেট করতে হয়, তবে প্রয়োজনীয় পরিমাণে ডাইলুট

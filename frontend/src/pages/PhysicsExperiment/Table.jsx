@@ -66,6 +66,7 @@ const Table = ({ result, setResult }) => {
                   type="number"
                   value={d[1]}
                   min={0}
+                  max={100}
                   onChange={(e) => updateTableData(e, i + 1, 2)}
                   className="table-input"
                 />

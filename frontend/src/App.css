@@ -239,3 +239,7 @@ img {
 .ml-40 {
   margin: 10rem; /* 160px */
 }
+.ref-link {
+  color: #514e7f;
+  /* text-decoration: underline; */
+}

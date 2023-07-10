@@ -1,8 +1,9 @@
 import { Link } from "@reach/router";
 import React from "react";
 import homePageIcon from "../../assets/images/icons/home.png";
+import questionIcon from "../../assets/images/icons/question.png";
 import logoIcon from "../../assets/images/logo.png";
-import { classList, subjectList } from "../../data/list";
+import { subjectList } from "../../data/list";
 import "./style.css";
 const NavBar = () => {
   return (
@@ -33,6 +34,16 @@ const NavBar = () => {
                 <span>মূল পৃষ্ঠা</span>
               </Link>
             </li>
+            <li>
+              <Link to="questions">
+                <img
+                  src={questionIcon}
+                  alt="I"
+                  style={{ height: "30px", width: "30px" }}
+                />
+                <span>জিজ্ঞাসা</span>
+              </Link>
+            </li>
             <li className="menu-heading">
               <h3>বিষয় ভিত্তিক পরীক্ষণ</h3>
             </li>
@@ -43,18 +54,6 @@ const NavBar = () => {
                   <img src={s.image} alt="I" />
 
                   <span>{s.name}</span>
-                </a>
-              </li>
-            ))}
-            <li className="menu-heading">
-              <h3>শ্রেণি ভিত্তিক পরীক্ষণ</h3>
-            </li>
-            {classList.map((c) => (
-              <li>
-                <a href="#0">
-                  <img src={c.image} alt="I" />
-
-                  <span>{c.name}</span>
                 </a>
               </li>
             ))}

@@ -168,7 +168,7 @@ const CheSimulationTemplate = () => {
                 </div>
                 <div className={openTab === 5 ? "block" : "hidden"} id="link5">
                   <PlaySimulationTemplate
-                    videoURL={"http://localhost:3000/html5/che.html"}
+                    videoURL={"http://localhost:3000/html5/phy.html"}
                   />
                 </div>
                 <div className={openTab === 6 ? "block" : "hidden"} id="link5">

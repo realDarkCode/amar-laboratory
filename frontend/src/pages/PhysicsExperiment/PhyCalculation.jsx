@@ -22,7 +22,7 @@ const PhyCalculation = () => {
           অতিক্রম করে), p = 1 mm
         </p>
         <p>লঘিষ্ঠ গণন, </p>
-        <img src={Image06} alt="equation" srcset="" className="w-52 ml-12" />
+        <img src={Image06} alt="equation" srcset="" className="w-40 ml-12" />
         <div className="mb-3">
           <h2 className="font-semibold"> তারের ব্যাস নির্ণয়ের ছক: </h2>
           <Table result={result} setResult={setResult} />

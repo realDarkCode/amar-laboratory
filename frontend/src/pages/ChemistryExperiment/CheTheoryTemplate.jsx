@@ -85,7 +85,11 @@ const CheTheoryTemplate = () => {
             অতএব, 250 মিলি 0.1 এম দ্রবণ প্রস্তুত করতে অক্সালিক অ্যাসিডের ওজন
             প্রয়োজন ={" "}
           </p>
-          <img src={Image01} alt="simulation-theory" className="mt-4 ml-1 w-96" />
+          <img
+            src={Image01}
+            alt="simulation-theory"
+            className="mt-4 ml-1 w-56"
+          />
         </div>
         <p className="mt-2">
           অক্সালিক অ্যাসিডের একটি আদর্শ দ্রবণ ব্যবহার করে KMnO₄ এর শক্তি
@@ -98,7 +102,7 @@ const CheTheoryTemplate = () => {
           অম্লীয় মাধ্যমের পারম্যাঙ্গনেট আয়ন একটি অত্যন্ত শক্তিশালী অক্সিডাইজিং
           এজেন্ট। ডাইলুট সালফিউরিক অ্যাসিড যোগ করে অম্লতা প্রবর্তন করা হয়।
         </p>
-        <img src={Image02} alt="simulation-theory" className="py-2" />
+        <img src={Image02} alt="simulation-theory" className="py-2 w-88" />
         <p>
           শেষবিন্দু নির্ধারণ করতে অন্য কোনো সূচক ব্যবহার করা হয় না কারণ KMnO₄
           নির্দেশক হিসেবে কাজ করে। পারম্যাঙ্গানেট (MnO4-) আয়নের গাঢ় বেগুনি রঙ
@@ -111,19 +115,19 @@ const CheTheoryTemplate = () => {
       {/* Content 5 */}
       <div className="mb-4">
         <p className="my-1">আণবিক সমীকরণ</p>
-        <img src={Image03} alt="simulation-theory" className="py-2" />
+        <img src={Image03} alt="simulation-theory" className="py-2 " />
         <div className="mt-1 flex flex-wrap">
           <p>সামগ্রিক প্রতিক্রিয়া : </p>
-          <img src={Image04} alt="simulation-theory" className="ml-1" />
+          <img src={Image04} alt="simulation-theory" className="ml-1 w-96" />
         </div>
       </div>
       {/* Content 6 */}
       <div className="mb-4">
         <p className="my-1">আয়নিক সমীকরণ</p>
-        <img src={Image05} alt="simulation-theory" className="py-2" />
+        <img src={Image05} alt="simulation-theory" className="py-2 w-88" />
         <div className="mt-1 flex flex-wrap">
           <p>সামগ্রিক প্রতিক্রিয়া : </p>
-          <img src={Image06} alt="simulation-theory" className="ml-1" />
+          <img src={Image06} alt="simulation-theory" className="ml-1 w-96" />
         </div>
       </div>
       {/* Content 7 */}
@@ -135,10 +139,14 @@ const CheTheoryTemplate = () => {
           <br />
           মোলারিটি সমীকরণ অনুসারে,
         </p>
-        <img src={Image07} alt="simulation-theory" className="mt-2" />
+        <img src={Image07} alt="simulation-theory" className="mt-2 w-106" />
         <div className="mt-4 flex flex-wrap">
           <p>অতএব, KMnO₄ এর মোলারিটি = </p>
-          <img src={Image08} alt="simulation-theory" className="ml-1 mt-4" />
+          <img
+            src={Image08}
+            alt="simulation-theory"
+            className="ml-1 mt-4 w-96"
+          />
         </div>
         <p>
           যদি অক্সালিক অ্যাসিড টাইট্রেট করতে হয়, তবে প্রয়োজনীয় পরিমাণে ডাইলুট

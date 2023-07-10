@@ -1,0 +1,23 @@
+.phyTable,
+.phyTable th,
+.phyTable td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table-span {
+  transform: translateY(65px);
+}
+.table-input {
+  background-color: transparent;
+}
+.table-input:focus {
+  outline: none;
+}
+.print-btn {
+  background-color: var(--page-header-bgColor);
+  padding: 0.5rem 1rem;
+  color: var(--white);
+}
+.print-btn:hover {
+  background-color: var(--page-header-bgColor-hover);
+}

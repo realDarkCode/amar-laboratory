@@ -1,7 +1,7 @@
 import {
   faBook,
-  faDiceD6,
-  faPlayCircle,
+  faFlask,
+  faFlaskVial,
   faTasks,
   faVideo,
 } from "@fortawesome/free-solid-svg-icons";
@@ -9,9 +9,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import PlaySimulationTemplate from "../../components/Experiment/PlaySimulationTemplate";
 import VideoTemplate from "../../components/Experiment/VideoTemplate";
+import ChemistryInstrument from "./CheInstrument";
 import CheProcedureTemplate from "./CheProcedureTemplate";
 import CheTheoryTemplate from "./CheTheoryTemplate";
-
 const CheSimulationTemplate = () => {
   const [openTab, setOpenTab] = React.useState(1);
   document.title =
@@ -20,7 +20,6 @@ const CheSimulationTemplate = () => {
   // YouTube video ID
   const videoSimulationId = {
     videoId: "MY97TzPVGMs",
-    animationId: "XWnzUVaQhSY",
   };
 
   return (
@@ -63,6 +62,25 @@ const CheSimulationTemplate = () => {
                 href="#link2"
                 role="tablist"
               >
+                <FontAwesomeIcon icon={faFlask} className="mr-1" /> উপকরণ
+              </a>
+            </li>
+            <li className="mb-2 mr-2 last:mr-0 flex-auto text-center">
+              <a
+                className={` simulation-template  
+                                ${
+                                  openTab === 3
+                                    ? "text-white bg-brand-900"
+                                    : "text-brand-900 bg-white"
+                                }`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setOpenTab(3);
+                }}
+                data-toggle="tab"
+                href="#link2"
+                role="tablist"
+              >
                 <FontAwesomeIcon icon={faTasks} className="mr-1" /> কার্যপ্রণালী
               </a>
             </li>
@@ -70,13 +88,13 @@ const CheSimulationTemplate = () => {
               <a
                 className={`simulation-template  
                   ${
-                    openTab === 3
+                    openTab === 4
                       ? "text-white bg-brand-900"
                       : "text-brand-900 bg-white"
                   }`}
                 onClick={(e) => {
                   e.preventDefault();
-                  setOpenTab(3);
+                  setOpenTab(4);
                 }}
                 data-toggle="tab"
                 href="#link3"
@@ -85,22 +103,7 @@ const CheSimulationTemplate = () => {
                 <FontAwesomeIcon icon={faVideo} className="mr-1" /> ভিডিও
               </a>
             </li>
-            <li className="mb-2 mr-2 last:mr-0 flex-auto text-center">
-              <a
-                className={`simulation-template  
-									${openTab === 4 ? "text-white bg-brand-900" : "text-brand-900 bg-white"}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  setOpenTab(4);
-                }}
-                data-toggle="tab"
-                href="#link4"
-                role="tablist"
-              >
-                <FontAwesomeIcon icon={faPlayCircle} className="mr-1" />{" "}
-                অ্যানিমেশন
-              </a>
-            </li>
+
             <li className="mb-2 mr-2 last:mr-0 flex-auto text-center">
               <a
                 className={`simulation-template  
@@ -117,7 +120,7 @@ const CheSimulationTemplate = () => {
                 href="#link5"
                 role="tablist"
               >
-                <FontAwesomeIcon icon={faDiceD6} className="mr-1" /> সিমুলেটর
+                <FontAwesomeIcon icon={faFlaskVial} className="mr-1" /> পরীক্ষণ
               </a>
             </li>
           </ul>
@@ -132,13 +135,13 @@ const CheSimulationTemplate = () => {
                   <CheTheoryTemplate />
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
+                  <ChemistryInstrument />
+                </div>
+                <div className={openTab === 3 ? "block" : "hidden"} id="link2">
                   <CheProcedureTemplate />
                 </div>
-                <div className={openTab === 3 ? "block" : "hidden"} id="link3">
+                <div className={openTab === 4 ? "block" : "hidden"} id="link3">
                   <VideoTemplate videoId={videoSimulationId.videoId} />
-                </div>
-                <div className={openTab === 4 ? "block" : "hidden"} id="link4">
-                  <VideoTemplate videoId={videoSimulationId.animationId} />
                 </div>
                 <div className={openTab === 5 ? "block" : "hidden"} id="link5">
                   <PlaySimulationTemplate

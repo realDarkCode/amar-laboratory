@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Iframe from "react-iframe";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
@@ -12,7 +12,11 @@ const PlaySimulationTemplate = ({ videoURL }) => {
   // For Pre-Loader Function
   const keyUpTimer = useRef(null);
   const keyUpTimerDelay = 3000;
-  clearTimeout(keyUpTimer.current);
+  useEffect(() => {
+    return () => {
+      clearTimeout(keyUpTimer.current);
+    };
+  }, []);
 
   keyUpTimer.current = setTimeout(() => {
     setPreLoaderVisibility(false);

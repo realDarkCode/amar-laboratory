@@ -14,11 +14,11 @@ const ExperimentList = () => {
   document.title = "মূল পাতা";
 
   const handleSubjectClick = (subject) => {
-    if (subject === state.subject) return setState({ ...state, subject: "" });
+    if (subject === state.subject) return;
     setState({ ...state, subject });
   };
   const handleClassClick = (cls) => {
-    if (cls === state.class) return setState({ ...state, class: "" });
+    if (cls === state.class) return;
 
     setState({ ...state, class: cls });
   };

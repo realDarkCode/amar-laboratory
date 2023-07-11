@@ -5,8 +5,8 @@ import { useState } from "react";
 import { experimentsList } from "../../data/experiments";
 import { classList, subjectList } from "../../data/list";
 const initialState = {
-  subject: "",
-  class: "",
+  subject: "phy",
+  class: "12",
 };
 const ExperimentList = () => {
   const [state, setState] = useState({ ...initialState });

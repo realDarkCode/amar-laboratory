@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { memo, useEffect, useRef, useState } from "react";
 import Iframe from "react-iframe";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
@@ -64,4 +64,4 @@ const PlaySimulationTemplate = ({ videoURL }) => {
   );
 };
 
-export default PlaySimulationTemplate;
+export default memo(PlaySimulationTemplate);

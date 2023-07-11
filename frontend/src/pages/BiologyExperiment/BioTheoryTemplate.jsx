@@ -162,7 +162,7 @@ const CheTheoryTemplate = () => {
       </div>
       <div className="">
         <h2 className="font-semibold">সালোকসংশ্লেষণে আলোর প্রভাবঃ</h2>
-        <p>
+        <p className="mb-4">
           <a
             href="https://bn.wikipedia.org/wiki/%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A7%8B%E0%A6%95%E0%A6%B8%E0%A6%82%E0%A6%B6%E0%A7%8D%E0%A6%B2%E0%A7%87%E0%A6%B7%E0%A6%A3"
             target="_blank"
@@ -213,6 +213,67 @@ const CheTheoryTemplate = () => {
             সালোকসংশ্লেষণ
           </a>{" "}
           হারও কমে যায়।
+        </p>
+        <p>
+          {" "}
+          <a
+            href="https://bn.wikipedia.org/wiki/%E0%A6%95%E0%A7%8D%E0%A6%B2%E0%A7%8B%E0%A6%B0%E0%A7%8B%E0%A6%AB%E0%A6%BF%E0%A6%B2"
+            target="_blank"
+            className="ref-link"
+          >
+            ক্লোরোফিল
+          </a>{" "}
+          এর{" "}
+          <a
+            href="https://en.wikipedia.org/wiki/Absorption_spectroscopy"
+            target="_blank"
+            className="ref-link"
+          >
+            অ্যাবজর্পশন স্পেক্ট্রা
+          </a>{" "}
+          দেখলে দেখা যায় তা সবুজ ও হলুদে সবচেয়ে কম আলো শোষণ করে ({" "}
+          <a
+            href="https://en.wikipedia.org/wiki/Absorption_spectroscopy"
+            target="_blank"
+            className="ref-link"
+          >
+            অ্যাবজর্পশন স্পেক্ট্রা
+          </a>{" "}
+          মিনিমম)। তাই পাতার রং সবুজ। তাই{" "}
+          <a
+            href="https://bn.wikipedia.org/wiki/%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%A1"
+            target="_blank"
+            className="ref-link"
+          >
+            প্লাস্টিড{" "}
+          </a>{" "}
+          ( ক্লোরোপ্লাস্ট) বা পাতা বেগুনী, নীল ও লাল, কমলা য় সবচেয়ে বেশী
+          অ্যাবজর্পশন এবং বেশী সালোকসংশ্লেষণ হয় । সহজ ভাবে বলতে গেলে লাল আলো
+          অর্থাৎ 680 to 700mm তরঙ্গ দৈর্ঘ্যের আলো উদ্ভিদের{" "}
+          <a
+            href="https://bn.wikipedia.org/wiki/%E0%A6%95%E0%A7%8D%E0%A6%B2%E0%A7%8B%E0%A6%B0%E0%A7%8B%E0%A6%AB%E0%A6%BF%E0%A6%B2"
+            target="_blank"
+            className="ref-link"
+          >
+            ক্লোরোফিল
+          </a>{" "}
+          সরাসরি গ্রহন করতে পারে কিন্তু এর নিচের তরঙ্গদৈর্ঘ্যের আলো প্রথমে{" "}
+          <a
+            href="https://www.google.com/search?q=%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A7%8B%E0%A6%9F%E0%A6%BF%E0%A6%A8%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%A1+%E0%A6%95%E0%A6%BF"
+            target="_blank"
+            className="ref-link"
+          >
+            ক্যারোটেনয়েড{" "}
+          </a>{" "}
+          দ্বারা শোষিত হবার পর{" "}
+          <a
+            href="https://bn.wikipedia.org/wiki/%E0%A6%95%E0%A7%8D%E0%A6%B2%E0%A7%8B%E0%A6%B0%E0%A7%8B%E0%A6%AB%E0%A6%BF%E0%A6%B2"
+            target="_blank"
+            className="ref-link"
+          >
+            ক্লোরোফিলে
+          </a>{" "}
+          সঞ্চারিত হয় । এর জন্য সালোকসংশ্লেষনে লাল আলো বেশী কার্য্যকরী
         </p>
       </div>
     </div>

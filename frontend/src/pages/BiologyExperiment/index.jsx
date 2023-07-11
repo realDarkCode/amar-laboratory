@@ -9,17 +9,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import PlaySimulationTemplate from "../../components/Experiment/PlaySimulationTemplate";
 import VideoTemplate from "../../components/Experiment/VideoTemplate";
-import ChemistryInstrument from "./CheInstrument";
-import CheProcedureTemplate from "./CheProcedureTemplate";
-import CheTheoryTemplate from "./CheTheoryTemplate";
+import ChemistryInstrument from "./BioInstrument";
+import CheProcedureTemplate from "./BioProcedureTemplate";
+import CheTheoryTemplate from "./BioTheoryTemplate";
+import "./style.css";
 const BioExperiment = () => {
   const [openTab, setOpenTab] = React.useState(1);
-  document.title =
-    "KMnO₄ দ্রবন দ্বারা অজানা ঘনমাত্রার দ্রবনে ফেরাস আয়নের পরিমান নির্ণয়।";
+  document.title = "বিভিন্ন বর্ণের আলোয় সালোকসংশ্লেষণের হার পর্যবেক্ষণ";
 
   // YouTube video ID
   const videoSimulationId = {
-    videoId: "MY97TzPVGMs",
+    videoId: "lmsufPOhqyw",
   };
 
   return (
@@ -120,7 +120,8 @@ const BioExperiment = () => {
                 href="#link5"
                 role="tablist"
               >
-                <FontAwesomeIcon icon={faFlaskVial} className="mr-1" /> পরীক্ষণ
+                <FontAwesomeIcon icon={faFlaskVial} className="mr-1" />{" "}
+                পর্যবেক্ষণ
               </a>
             </li>
           </ul>
@@ -145,7 +146,10 @@ const BioExperiment = () => {
                 </div>
                 <div className={openTab === 5 ? "block" : "hidden"} id="link5">
                   <PlaySimulationTemplate
-                    videoURL={"http://localhost:3000/html5/che.html"}
+                    // videoURL={"http://localhost:3000/html5/che.html"}
+                    videoURL={
+                      "https://realdarkcode.github.io/amar-laboratory/html5/bio.html"
+                    }
                   />
                 </div>
               </div>

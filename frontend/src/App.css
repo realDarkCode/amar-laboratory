@@ -45,9 +45,7 @@ button {
   cursor: pointer;
 }
 
-input {
-  -webkit-appearance: none;
-}
+
 
 [type="checkbox"] {
   position: absolute;
@@ -169,10 +167,15 @@ img {
 .w-160 {
   width: 40rem;
 }
+.w-120 {
+  width: 30rem;
+}
 .w-104 {
   width: 26rem; /* 320px */
 }
-
+.w-100{
+  width: 100%;
+}
 .w-96 {
   width: 24rem; /* 320px */
 }
@@ -242,4 +245,9 @@ img {
 .ref-link {
   color: #514e7f;
   /* text-decoration: underline; */
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -145,7 +145,10 @@ const CheSimulationTemplate = () => {
                 </div>
                 <div className={openTab === 5 ? "block" : "hidden"} id="link5">
                   <PlaySimulationTemplate
-                    videoURL={"http://localhost:3000/html5/che.html"}
+                    // videoURL={"http://localhost:3000/html5/che.html"}
+                    videoURL={
+                      "https://realdarkcode.github.io/amar-laboratory/html5/che.html"
+                    }
                   />
                 </div>
               </div>

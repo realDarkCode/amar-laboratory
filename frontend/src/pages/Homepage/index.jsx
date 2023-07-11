@@ -11,6 +11,8 @@ const initialState = {
 const ExperimentList = () => {
   const [state, setState] = useState({ ...initialState });
   const navigate = useNavigate();
+  document.title = "মূল পাতা";
+
   const handleSubjectClick = (subject) => {
     if (subject === state.subject) return setState({ ...state, subject: "" });
     setState({ ...state, subject });
